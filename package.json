@@ -68,6 +68,7 @@
   "dependencies": {
     "@clerk/clerk-js": "^4.70.3",
     "@clerk/nextjs": "^4.29.9",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@iconify/react": "^4.1.1",
