@@ -34,7 +34,7 @@ const Footer = () => {
         {/* Footer Items */}
         <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-300">
           {FooterItems.map((foot) => (
-            <li>
+            <li key={FooterItems.indexOf(foot)}>
               <Link href={foot.href} className="mr-4 hover:underline md:mr-6 ">
                 {foot.name}
               </Link>

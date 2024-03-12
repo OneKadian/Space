@@ -49,7 +49,10 @@ const Testimanual = () => {
       <div class="text-center"></div>
       <div class="grid grid-cols-1 p-10 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {Testimonials.map((testimonial) => (
-          <div class="text-gray-300 border border-gray-300 rounded-xl p-10 flex flex-col justify-between">
+          <div
+            key={Testimonials.indexOf(testimonial)}
+            class="text-gray-300 border border-gray-300 rounded-xl p-10 flex flex-col justify-between"
+          >
             {testimonial.words}
             <div class="mt-10 flex space-x-3 items-center">
               <img
