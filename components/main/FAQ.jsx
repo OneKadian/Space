@@ -61,8 +61,8 @@ const Frequently = () => {
           {/* FAQ begins here */}
           <div className="max-w-screen-xl mx-auto px-5 flex justify-center">
             <div className="grid divide-y divide-neutral-200 w-full mx-auto mt-8">
-              {Questions.map((que) => (
-                <div className="py-5" key={Questions.indexOf(que)}>
+              {Questions.map((que, index) => (
+                <div className="py-5" key={index}>
                   <details className="group">
                     <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                       <span> {que.Question}</span>

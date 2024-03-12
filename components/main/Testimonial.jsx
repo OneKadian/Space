@@ -48,9 +48,9 @@ const Testimanual = () => {
     <div class="py-24 sm:py-32">
       <div class="text-center"></div>
       <div class="grid grid-cols-1 p-10 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {Testimonials.map((testimonial) => (
+        {Testimonials.map((testimonial, index) => (
           <div
-            key={Testimonials.indexOf(testimonial)}
+            key={index}
             class="text-gray-300 border border-gray-300 rounded-xl p-10 flex flex-col justify-between"
           >
             {testimonial.words}
