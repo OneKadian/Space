@@ -2,22 +2,27 @@ import Link from "next/link";
 
 const FooterItems = [
   {
+    id: 1,
     name: "Linkedin",
     href: "https://www.linkedin.com/in/onekadian/",
   },
   {
+    id: 2,
     name: "Mail",
     href: "/",
   },
   {
+    id: 3,
     name: "Twitter",
     href: "https://twitter.com/onekadian",
   },
   {
+    id: 4,
     name: "Legal",
     href: "/",
   },
 ];
+
 
 // Update the array above, limit to 4 for better ux and you have a footer ready
 
@@ -33,8 +38,8 @@ const Footer = () => {
         </p>
         {/* Footer Items */}
         <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-300">
-          {FooterItems.map((foot, index) => (
-            <li key={index}>
+          {FooterItems.map((foot) => (
+            <li key={foot.id}>
               <Link href={foot.href} className="mr-4 hover:underline md:mr-6 ">
                 {foot.name}
               </Link>
