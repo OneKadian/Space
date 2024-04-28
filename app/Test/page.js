@@ -95,8 +95,8 @@ export default function Shipping() {
             // <AccordionList className="max-w-md mx-auto">
             <div className="max-w-screen-xl mx-auto px-5 bg-gray-900 flex justify-center">
               <div className="grid divide-y divide-neutral-200 w-full mx-auto mt-8">
-                {BizIdeas.map((idean) => (
-                  <div className="py-5 text-gray-300">
+                {BizIdeas.map((idean, index) => (
+                  <div className="py-5 text-gray-300" key={index}>
                     <details className="group">
                       <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                         <span> {idean.idea}</span>
