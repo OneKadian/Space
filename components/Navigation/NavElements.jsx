@@ -30,6 +30,8 @@ const NavElements = () => {
     switch (pathname) {
       case "/members":
         return membersNavigation;
+      case "/sign-in":
+        return membersNavigation;
       case "/":
         return navigation;
       // ...other cases

@@ -1,5 +1,9 @@
+"use client";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
+import { useMemo } from "react";
+import { usePathname } from "next/navigation";
+
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
@@ -8,6 +12,7 @@ import { useRouter } from "next/navigation";
 const SideMenu = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const navigation = [
     { name: "Pricing", href: "#pricing-section2" },
@@ -24,8 +29,21 @@ const SideMenu = () => {
     },
   ];
 
-  const memoizedNavigation =
-    router.pathname === "/members" ? membersNavigation : navigation;
+  // const memoizedNavigation =
+  //   router.pathname === "/members" ? membersNavigation : navigation;
+  const memoizedNavigation = useMemo(() => {
+    switch (pathname) {
+      case "/members":
+        return membersNavigation;
+      case "/sign-in":
+        return membersNavigation;
+      case "/":
+        return navigation;
+      // ...other cases
+      default:
+        return navigation;
+    }
+  }, [pathname, navigation, membersNavigation]);
 
   const handleScroll = (e, href) => {
     if (href.startsWith("#")) {
