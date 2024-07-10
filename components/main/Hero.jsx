@@ -32,7 +32,8 @@ export const Hero = () => {
         muted
         loop
         // to setup how much black hole you wish to see in BG, just add mt-xx below
-        className="rotate-180 absolute top-[-340px] left-0 w-full h-full object-cover -z-20"
+        // className="rotate-180 absolute top-[-340px] left-0 w-full h-full object-cover -z-20"
+        className="rotate-180 absolute top-[-540px] lg:top-[-340px] left-0 w-full h-full object-cover -z-20"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
@@ -40,7 +41,7 @@ export const Hero = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row px-10 mt-40 py-32 w-full z-[20]"
+        className="flex flex-col lg:flex-row px-10 py-32 lg:mt-16 w-full z-[20]"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
           <motion.div
@@ -84,7 +85,7 @@ export const Hero = () => {
 
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="w-full h-full justify-center items-center hidden lg:flex"
+          className="w-full h-full justify-center items-center mt-16 lg:mt-0 lg:flex"
         >
           <Image
             src={MainGraphic}
@@ -92,7 +93,7 @@ export const Hero = () => {
             height={650}
             width={650}
             draggable={false}
-            className="select-none rounded-xl shadow-xl ring-1 ring-gray-400/10 "
+            className="select-none rounded-xl shadow-xl ring-1 ring-gray-400/10  "
           />
         </motion.div>
       </motion.div>
