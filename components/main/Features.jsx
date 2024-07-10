@@ -58,7 +58,7 @@ export default function FeaturedSection() {
               </dl> */}
             </div>
           </div>
-          <div className="flex flex-1 overflow-hidden  justify-center rounded-xl shadow-xl ring-1 ring-gray-400/10 items-center h-[24rem] lg:h-auto">
+          <div className="flex bg-[#1a1b26] flex-1 overflow-hidden  justify-center rounded-xl shadow-xl ring-1 ring-gray-400/10 items-center h-[24rem] lg:h-auto">
             <video
               src="https://osdblyvwidixouibqkrf.supabase.co/storage/v1/object/public/Badminton/CodeFiles.mp4"
               autoPlay

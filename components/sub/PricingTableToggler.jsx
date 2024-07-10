@@ -184,43 +184,14 @@ const ToggleTable2 = ({ userd }) => {
         {prices.map((option, index) => (
           <div
             key={index}
-            className="flex flex-col p-6 mx-auto max-w-lg text-center border border-white-600/30 bg-white-600/20 rounded-lg shadow text-white"
+            className="flex flex-col justify-center items-center p-6 mx-auto max-w-lg text-center border border-white-600/30 bg-white-600/20 rounded-lg shadow text-white"
           >
-            <h3 className="mb-4 text-3xl font-semibold text-black">
+            <h3 className="mb-4 text-3xl font-semibold text-gray-300">
               {option.title}
             </h3>
             <p className="font-light text-primary-900 sm:text-lg m-0">
               {option.description}
             </p>
-            {/* here */}
-            {/* <div className="flex flex-col items-center justify-center min-h-[100px] space-y-4 bg-opacity-70 p-6 bg-[#ffffff14]">
-              <div className="flex flex-row">
-                <div className="flex items-end">
-                  <div className="flex text-left text-[34px] lg:text-[38px] font-semibold text-gray-600 p-1 leading-6">
-                    {isYearly && option.prices[0].price > 0 ? (
-                      <>
-                        <span className="mr-2 font-semibold text-gray-500 line-through">
-                          ${option.prices[0].price}
-                        </span>
-                        <span>${option.prices[1].price / 12}</span>
-                      </>
-                    ) : (
-                      `$${option.prices[0].price}`
-                    )}
-                  </div>
-                  <div className="-mb-[3px] text-left text-base lg:text-lg lg:ml-1 font-medium text-gray-600">
-                    <div>/month</div>
-                  </div>
-                </div>
-              </div>
-              {option.prices[0].price > 0 ? (
-                <div className="text-left text-xs lg:text-sm  text-gray-600">
-                  {isYearly
-                    ? `$${option.prices[1].price} will be charged when annual`
-                    : "when charged monthly"}
-                </div>
-              ) : null}
-            </div> */}
             <div className="flex flex-col items-center justify-center min-h-[100px] space-y-4 p-6">
               <div className="flex flex-row">
                 <div className="flex items-end">
@@ -272,7 +243,7 @@ const ToggleTable2 = ({ userd }) => {
               }
               user={userd}
               display={option.buttonText}
-              className={`text-white bg-purple-700 ${option.buttonDisplay} font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
+              className={`text-white bg-purple-700 ${option.buttonDisplay} font-medium rounded-lg text-sm px-5 py-2.5 w-4/5 text-center`}
             />
           </div>
         ))}
