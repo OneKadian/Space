@@ -1,10 +1,11 @@
 import { VisualDisplay } from "@/components/main/Display";
 import { Hero } from "@/components/main/Hero";
-import { Projects } from "@/components/main/projects";
-import { Introduction } from "@/components/main/Introduction";
+import { Showcase } from "@/components/main/ShowCase";
+import { CTA } from "@/components/main/CTA";
 import PricingTable from '../components/main/PricingTable'
 import Frequently from '../components/main/FAQ'
 import Features from '../components/main/Features'
+import Features2 from '../components/main/Features2'
 import Testimanual from '../components/main/Testimonial'
 
 
@@ -13,12 +14,13 @@ export default function Home() {
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
         <Hero />
-        <Introduction />
+        <Features/>
+        <Features2/>
+        <CTA />
         <VisualDisplay/>
         <PricingTable />
-        <Features/>
         <Testimanual/>
-        <Projects />
+        <Showcase />
         <Frequently/>
       </div>
     </main>

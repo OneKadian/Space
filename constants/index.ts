@@ -259,27 +259,29 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Indie Hacker Kit",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio". okay?',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
-  },
-  {
-    title: "Modern Next.js 14 Portfolio",
-    description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio". okay?',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
-  },
-  {
-    title: "Modern Next.js 14 Portfolio",
-    description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio". okay?',
+      'Dont let procrastination stop you, Launch your product fast, without starting from scratch',
 
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+    image: "/projects/MainGraphic.png",
+    link: "https://indiehackerkit.com",
   },
+  {
+    title: "Indie Hacker Kit",
+    description:
+      'Dont let procrastination stop you, Launch your product fast, without starting from scratch',
+
+    image: "/projects/MainGraphic.png",
+    link: "https://indiehackerkit.com",
+  },
+  {
+    title: "Indie Hacker Kit",
+    description:
+      'Dont let procrastination stop you, Launch your product fast, without starting from scratch',
+
+    image: "/projects/MainGraphic.png",
+    link: "https://indiehackerkit.com",
+  }
 
 ] as const;
 
@@ -362,5 +364,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://github.com/OneKadian",
 };
