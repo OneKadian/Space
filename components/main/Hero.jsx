@@ -20,7 +20,7 @@ const textContent = {
     highlightText: "100%",
     subText: " launching a product, today",
   },
-  description: `Code Boilerplate, resource sheet and templates to turn developers into founders and help them launch instantly`,
+  description: `Code Boilerplate, resource sheet & templates to turn developers into founders and help them launch instantly`,
   buttonText: "Launch Now",
 };
 
