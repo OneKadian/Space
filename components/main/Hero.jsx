@@ -9,7 +9,6 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/lib/motion";
-import { Main } from "next/document";
 
 const textContent = {
   welcomeBox: {
