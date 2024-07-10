@@ -9,20 +9,14 @@ const FooterItems = [
   {
     id: 2,
     name: "Mail",
-    href: "/",
+    href: "mailto:anirudh@kadianventures.com",
   },
   {
     id: 3,
     name: "Twitter",
     href: "https://twitter.com/onekadian",
   },
-  {
-    id: 4,
-    name: "Legal",
-    href: "/",
-  },
 ];
-
 
 // Update the array above, limit to 4 for better ux and you have a footer ready
 

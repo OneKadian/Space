@@ -12,9 +12,8 @@ export const Navbar = async () => {
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+          {/* <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            {/* Your Logo */}
             <Image
               src="/logo.png"
               alt="Logo"
@@ -23,7 +22,7 @@ export const Navbar = async () => {
               draggable={false}
               className="cursor-pointer hover:animate-slowspin"
             />
-          </Link>
+          </Link> */}
         </div>
         {/* Navbar elements */}
         <NavElements />

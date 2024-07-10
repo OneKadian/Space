@@ -1,55 +1,36 @@
 const Frequently = () => {
-const Questions = [
-  {
-    id: 1,
-    Question: "What is the Indie Hacker Kit?",
-    Answer:
-      "Indie Hacker Kit is a combination of a code boilerplate with auth/payments/DB already setup alongwith a resource sheet, notion template and ai prompts with clear instructions to help you launch a product today",
-  },
-  {
-    id: 2,
-    Question: "If I can build it, why should I buy it?",
-    Answer:
-      "In the words of the great Marc louvion, 'Others are launching while you're building' ",
-  },
-  {
-    id: 3,
-    Question: "How do I get started?",
-    Answer:
-      "Choose a plan, get access to the resources with the instruction video, put in your keys, follow the roadmap and Launch!",
-  },
-  {
-    id: 4,
-    Question: "What all do I get?",
-    Answer:
-      "IHK is a combination of a boilerplate with launch instructions, templates, resource sheet, roadmaps and a subscription to the newsletter",
-  },
-  {
-    id: 5,
-    Question: "How often do I get updates?",
-    Answer:
-      "I code and build regularly, thus something new would be found every other day, so you can expect regular updates",
-  },
-  {
-    id: 6,
-    Question: "Is it really possible to launch in 30 minutes?",
-    Answer:
-      "Yes and No. Yes, if you have an idea and are ready to launch with a landing page followed by an MVP and, No if you plan to build the perfect product before launching :)",
-  },
-  {
-    id: 7,
-    Question: "Can I use this as a junior dev?",
-    Answer:
-      "Yes you can, given you've already worked with JS, Tailwind CSS and Next JS. The instructions does the job of making it easy to use and launch",
-  },
-  {
-    id: 8,
-    Question: "What if my question is not listed here",
-    Answer:
-      "Not a problem, reach out to me via Mail, twitter or LinkedIn and I'll be very happy to answer. Links in Footer.",
-  },
-];
-
+  const Questions = [
+    {
+      Question: "What is the Indie Hacker Kit?",
+      Answer:
+        "Indie Hacker Kit is a combination of a code boilerplate with auth/payments/DB already setup alongwith a resource sheet, notion template and ai prompts with clear instructions to help you launch a product today",
+    },
+    {
+      Question: "If I can build it, why should I buy it?",
+      Answer:
+        "In the words of the great Marc louvion, 'Others are launching while you're building' ",
+    },
+    {
+      Question: "How do I get started?",
+      Answer:
+        "Choose a plan, get access to the resources with the instruction video, put in your keys, follow the roadmap and Launch!",
+    },
+    {
+      Question: "What all do I get?",
+      Answer:
+        "IHK is a combination of a boilerplate with launch instructions, templates, and resource sheet",
+    },
+    {
+      Question: "Can I use this as a junior dev?",
+      Answer:
+        "Yes you can, given you've already worked with JS, Tailwind CSS and Next JS. The instructions does the job of making it easy to use and launch",
+    },
+    {
+      Question: "What if my question is not listed here",
+      Answer:
+        "Not a problem, reach out to me via Mail, twitter or LinkedIn and I'll be very happy to answer. Links in Footer.",
+    },
+  ];
 
   return (
     <section className="py-12 lg:py-32">
@@ -71,7 +52,7 @@ const Questions = [
           <div className="max-w-screen-xl mx-auto px-5 flex justify-center">
             <div className="grid divide-y divide-neutral-200 w-full mx-auto mt-8">
               {Questions.map((que) => (
-                <div className="py-5" key={que.id}>
+                <div className="py-5" key={Questions.indexOf(que)}>
                   <details className="group">
                     <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                       <span> {que.Question}</span>
