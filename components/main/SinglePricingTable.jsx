@@ -129,7 +129,7 @@ export default function SinglePricingTable() {
             </ul>
           </div>
           <div className="p-2 lg:w-full lg:max-w-md lg:flex-shrink-0">
-            <div className="rounded-2xl bg-gray-800 py-10 text-center ring-1 ring-inset ring-gray-700 lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div className="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-700 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="mx-auto max-w-xs px-8">
                 <p className="text-base font-semibold text-gray-300">
                   Pay once, own it forever
@@ -144,7 +144,10 @@ export default function SinglePricingTable() {
                     `$${currentPlan.billing.price} ${currentPlan.billing.text}`}
                 </div> */}
                 <div className="flex justify-center mt-10">
-                  <script src="https://gumroad.com/js/gumroad.js"></script>
+                  <script
+                    src="https://gumroad.com/js/gumroad.js"
+                    defer
+                  ></script>
                   <a
                     class="gumroad-button"
                     href={
