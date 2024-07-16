@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const featuredCopy = {
-  featuredHeading: "Build Fast like your life depends on it ( it could )",
+  featuredHeading: "Build Fast like your life depends on it (it could)",
   featuredDescription:
     "Next.js boilerplate in 4 themes with pre-setup auth, payments and database. Still can't launch? You belong to the no code tools 😑",
 };
